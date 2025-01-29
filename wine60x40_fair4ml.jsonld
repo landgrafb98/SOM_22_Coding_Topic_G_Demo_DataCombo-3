@@ -1,0 +1,22 @@
+{
+    "@context": "https://rdafair4ml.github.io/FAIR4ML-schema/release/0.1.0/context.jsonld",
+    "@type": "Model",
+    "name": "Self-Organizing Map",
+    "algorithm": "MiniSOM",
+    "hyperparameters": {
+        "grid_size": [
+            60,
+            40
+        ],
+        "input_len": 12,
+        "sigma": "1.0",
+        "learning_rate": "0.5"
+    },
+    "trainingData": "https://archive.ics.uci.edu/ml/datasets/Wine+Quality",
+    "evaluationMetrics": {
+        "quantization_error": 1.9547151116272012
+    },
+    "dependencies": {
+        "PySOMVis": "0.0.1"
+    }
+}
